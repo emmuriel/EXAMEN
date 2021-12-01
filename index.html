@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Nombre: Elisabet Martin Muriel  EXAMEN DIW Segundo ejercicio-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Segundo</title>
+   
+    <style>
+        header{
+            color: #AA00FF;
+            font-family: Arial;
+            font-size: 1rem;
+            font-weight: bold;
+            padding-left: 2rem;
+            padding-bottom: 2rem;;
+            border-width: 1px;
+            box-shadow: 0px 1px 0px ;
+            
+        }
+        fieldset{
+            border-color: #AA00FF;
+            margin-bottom: 1rem;
+        }
+        legend{
+            border-style: solid;
+            border-color: #AA00FF;
+            background-color: #AA00FF;
+            font-family: Arial;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            margin-left: 1rem;
+            
+        }
+        footer{
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            padding-inline-start:4rem;
+            margin-top: 2rem;
+            margin-bottom: 0rem;
+            background-color: #AA00FF;
+            font-family: Arial;
+            font-size: 0.5rem;
+            font-weight: bold;
+            color: white;
+        
+
+        }
+        h1{
+            font-family: Arial;
+            font-weight: 900;
+            font-size: 1.2rem;
+            margin-left: 1rem;    
+        }
+        #sub{
+            margin-left:  2rem;
+            margin-top:     0.5rem;
+            border-style: solid;
+            border-color: #AA00FF;
+            background-color: #AA00FF;
+            font-family: Arial;
+            font-size: 0.8rem;
+            color: white;
+            
+        }
+        form{
+            margin-left: 2rem;
+            font-family: Arial;
+            font-size: 0.8rem;
+            
+        }
+        label{
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+        input{
+            margin-left: 1rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.7rem;
+            font-family: Arial;
+            color:rgb(22, 22, 22);
+        }
+                
+        select{
+            margin-left: 1rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.5rem;
+            margin-right: 0rem;
+            color:rgb(22, 22, 22);
+        }
+        
+        p{
+            margin-left: 1rem;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 0.7rem;
+            text-align: justify;
+            
+        }
+        #cond{
+            margin-left: 2rem;
+           
+        }
+        #cond2 {
+            margin-left: 0rem;
+            font-family: Arial;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+        #leyenda{
+            font-weight: unset;
+            font-size: 0.7rem;
+            padding-left: 1rem;
+            
+        }
+  
+    </style>
+</head>
+<body>
+    <header>petinder</header>
+    <h1>Hazte socio</h1>
+    <p>Colabora con Petinder haciéndote socio por solo 15 euros mensuales. Con muy poco puedes ayudar y mucho a nuestros amigos peludos. Además puedes comprar nuestra exclusiva camiseta por solo 10 euros que se añadirán al primer pago. Rellena el siguiente formulario para unirte a nosotros:</p>
+
+    <form id="direccion"> <!-- No vamos a enviarlo a ninguna parte así que no le pongo action ni nada de eso-->
+        <fieldset>
+            <legend>Direccion</legend>
+            <label name="calle">Calle y número *</label><br>
+            <input type="text" name="calle" required="required" title="Calle y número" value="Calle y número"><br>
+            <label>Ciudad *</label><br>
+            <input type="text" name="ciudad" required="required" title="Ciudad" value="Ciudad"><br>
+            <label name="prov">Provincia *</label><br>
+            <input type="text" name="prov" required="required" title="Provincia" value="Provincia"><br>
+            <label name="cp" >Código Postal *</label><br>
+            <input type="text" name="cp" required="required" title="Código Postal" value="Código Postal" pattern="/[0-9]{5}/" maxlength="5" minlength="5" ><br>
+            <label name="pais">País</label><br>
+            <select name="pais" title="Seleccionar">
+                    <option value="E">España</option>
+                    <option value="P">Portugal</option>
+            </select>
+            
+        </fieldset>
+        <label id="leyenda">* Todos los campos deben ser obligatorios</label><br>
+        <input type="checkbox" name="condiciones" id="cond" required="required"> <!--Lo he puesto required para que haya que aceotar las condiciones de uso antes de enviar el formulario-->
+        <label name="condiciones" id="cond2"> He leido y acepto la política de privacidad y las condiciones de uso</label><br>
+        <input type="submit" value="Enviar" id="sub"><br>
+    </form>
+
+    <footer>2021 &copy; Elisabet Matin Muriel</footer>
+    
+</body>
+</html>

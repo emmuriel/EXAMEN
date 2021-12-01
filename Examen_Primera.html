@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Nombre: Elisabet Martin Muriel  EXAMEN DIW-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Primera</title>
+    <style>
+
+        
+        li:last-child{ /*Ultimo elementod e la lista tachado*/
+            text-decoration-line: line-through;
+        }
+        /* En teoria el siguiente estilo deberia funcionar pero me separa todos los elementos de la lista
+            así que lo he hecho dando el formato "al revés".
+        
+        ul:nth-child(-n+3){  
+            letter-spacing: 1em;
+        }*/
+        li{
+            letter-spacing: 1em;
+        }
+        li:nth-child(n+4){
+            letter-spacing: 0em;
+        }
+
+
+        li:nth-child(even){  /*Borde en los elementos pares*/
+            border-width: 1vw;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <ul>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li lang="en">Three</li>
+            <li lang="en">Four</li>
+            <li>Cinco</li>
+            <li>Seis</li>
+            <li>Siete</li>
+            <li>Ocho</li>
+        </ul>
+    </form>
+</body>
+</html>
